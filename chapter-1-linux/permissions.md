@@ -1,127 +1,122 @@
 # 🛡️ Mission 5 — Quyền lực tối thượng (Sudo & Permissions)
 
-> **Mục tiêu:** Trong Linux, quyền `root` là toàn năng — nhưng lạm dụng có thể phá hỏng hệ thống. Mục này giữ nguyên nội dung gốc, mở rộng giải thích, thêm ví dụ thực tế, và trình bày hiện đại hơn để bạn nắm chắc khái niệm phân quyền và cách bảo vệ hệ thống.
+> **Mục tiêu:** Trong Linux, quyền `root` là toàn năng — nhưng lạm dụng có thể phá hỏng hệ thống. Phần này giữ nguyên nội dung gốc nhưng được trình bày gọn, trực quan và thân thiện hơn: quick-reference, ví dụ thực tế, checklist lab và mẹo bảo mật.
 
 ---
 
-## 1. Giải mã cấu trúc quyền (`ls -l`)
+📝 **Tóm tắt nhanh**
 
-Khi chạy `ls -l`, bạn sẽ thấy chuỗi như `-rwxr-xr--` — đó là "ổ khóa" của file trong Linux.
-
-Định dạng chung: `[Loại file] [Quyền Owner] [Quyền Group] [Quyền Others]`
-
-- **User (u)**: Chủ sở hữu file (owner).
-- **Group (g)**: Nhóm người dùng liên quan.
-- **Others (o)**: Tất cả người dùng còn lại.
-
-Ba quyền cơ bản mỗi nhóm có thể có:
-
-| Ký hiệu | Tên | Giá trị (Octal) | Mô tả ngắn |
-|---:|---|:---:|---|
-| `r` | Read | 4 | Đọc nội dung file/directory |
-| `w` | Write | 2 | Ghi/Thay đổi/ Xóa |
-| `x` | Execute | 1 | Thực thi (script/binary) hoặc truy cập thư mục |
-
-Gộp số theo Octal để set nhanh: ví dụ `750` = `7` cho owner (`rwx`), `5` cho group (`r-x`), `0` cho others (`---`).
+> - Phân quyền là nền tảng bảo mật Linux.
+> - `r` = đọc, `w` = ghi, `x` = thực thi.
+> - Dùng `chmod`, `chown`, `sudo` đúng cách để hạn chế rủi ro.
 
 ---
 
-## 2. `chmod`: Thay đổi quyền (chi tiết)
+## 🔐 1 — Cách đọc `ls -l` (quick reference)
 
-`chmod` có hai cách dùng chính:
+Chuỗi `-rwxr-xr--` biểu diễn quyền cho Owner / Group / Others. Dưới đây là bảng tham chiếu nhanh để bạn tra ngay:
 
-- **Numeric (Octal):** `chmod 755 file` — nhanh và phổ biến.
-- **Symbolic:** `chmod u=rwx,g=rx,o= file` — rõ ràng, dễ đọc.
+| Ký hiệu | Quyền | Octal | Ý nghĩa ngắn |
+|---|---|:---:|---|
+| `r` | Read | 4 | Đọc nội dung file / liệt kê thư mục |
+| `w` | Write | 2 | Ghi / sửa / xóa |
+| `x` | Execute | 1 | Thực thi file hoặc vào thư mục |
 
-Tham khảo nhanh:
+Ví dụ: `750` → owner `rwx` (7), group `r-x` (5), others `---` (0).
+
+---
+
+## 🔧 2 — `chmod` (Numeric & Symbolic)
+
+Chọn cách dùng tùy mục tiêu:
+
+- Numeric (nhanh): `chmod 755 file`
+- Symbolic (rõ ràng): `chmod u=rwx,g=rx,o=`
+
+Lệnh tham khảo:
 
 ```bash
-chmod 700 secret.sh      # Chỉ owner có quyền đầy đủ
-chmod 644 public.txt      # Owner đọc/ghi, mọi người đọc được
-chmod u+x script.sh       # Thêm quyền thực thi cho owner
-chmod g-w file.txt        # Bỏ quyền ghi cho group
+chmod 700 secret.sh    # owner có full quyền
+chmod 644 public.txt   # owner rw, others r
+chmod u+x script.sh    # thêm quyền thực thi cho owner
+chmod g-w file.txt     # bỏ quyền ghi cho group
 ```
 
-Mẹo: Tránh `chmod 777` — mở cửa cho tất cả, dễ dẫn đến backdoor.
+> ⚠️ Tránh `chmod 777` trừ khi bạn hiểu rõ rủi ro — nó mở cửa cho mọi tài khoản trên hệ thống.
 
 ---
 
-## 3. `chown` & `chgrp`: Quản lý chủ sở hữu và nhóm
+## 👥 3 — `chown` & `chgrp` (quản lý owner/group)
 
-Đổi chủ sở hữu và nhóm giúp kiểm soát ai có quyền trên file.
+Đổi chủ sở hữu hoặc nhóm giúp bạn kiểm soát ai thao tác được với file.
 
 ```bash
 sudo chown kali:kali malware.py   # owner = kali, group = kali
-sudo chgrp admin logs/            # thay đổi group của thư mục logs
+sudo chgrp admin logs/            # đổi group của thư mục logs
 ```
 
-Kiểm tra nhanh owner/group: `ls -l file` hoặc `stat file`.
+Kiểm tra: `ls -l file` hoặc `stat file` để xem chi tiết.
 
 ---
 
-## 4. `sudo`: Dùng quyền tạm thời an toàn
+## 🛠️ 4 — `sudo` (dùng quyền tạm thời)
 
-`sudo` cho phép user thông thường tạm mượn quyền root để chạy một lệnh duy nhất.
+`sudo` cho phép user chạy một lệnh với quyền root mà không cần đăng nhập root.
 
-- **Nguyên tắc:** Chỉ dùng `sudo` khi cần; tránh làm việc hàng loạt dưới `root`.
-- **Kiểm tra quyền sudo của user:** `sudo -l` hiển thị lệnh bạn được phép chạy.
-
-Thao tác hữu ích:
+Thao tác hay dùng:
 
 ```bash
-sudo command                # chạy 1 lệnh với quyền root
-sudo -i                    # chuyển sang shell root (cẩn thận)
-sudo !!                    # chạy lại lệnh trước bằng sudo
-sudo -l                    # liệt kê quyền sudo của user hiện tại
+sudo command    # chạy 1 lệnh dưới quyền root
+sudo -i         # shell root (cẩn thận)
+sudo !!         # chạy lại lệnh trước với sudo
+sudo -l         # liệt kê các lệnh bạn được phép chạy
 ```
 
-Lưu ý bảo mật: Không chạy script không rõ nguồn dưới `sudo` nếu chưa đọc nội dung.
+Best practice: chỉ dùng `sudo` khi cần, đọc script trước khi chạy với quyền cao.
 
 ---
 
-## 5. Thực hành nâng cao & tip an toàn
+## 📌 5 — Nâng cao & Mẹo an toàn
 
-- **Sử dụng `umask`** để đặt mặc định quyền file khi tạo mới (ví dụ `umask 027`).
-- **SetUID / SetGID / Sticky bit:** là những bit đặc biệt có thể ảnh hưởng đến hành vi file/executable. (Tìm hiểu kỹ trước khi sử dụng.)
-- **Kiểm tra sudoers:** `sudo visudo` để chỉnh, luôn dùng `visudo` để tránh lỗi cú pháp.
+- **`umask`**: Đặt mặc định quyền file mới (ví dụ `umask 027`).
+- **SetUID / SetGID / Sticky bit**: Bit đặc biệt có thể thay đổi hành vi — tìm hiểu trước khi bật.
+- **Sudoers**: Sửa bằng `sudo visudo` để tránh lỗi cú pháp gây mất quyền.
 
-Ví dụ kiểm tra file bằng `stat`:
+Ví dụ kiểm tra chi tiết:
 
 ```bash
 stat top_secret.txt
-# Hiển thị chi tiết owner/group/permissions, thời gian thay đổi
+# Hiển thị owner/group/permissions và timestamps
 ```
 
 ---
 
-## ⚔️ Bài tập thực chiến (Lab) — giữ nguyên nội dung gốc nhưng mở rộng chỉ dẫn
+## ⚔️ Lab — Thực hành (Checklist)
 
-Chúng ta mô phỏng tạo tài liệu mật và ngăn user khác đọc được.
+Thực hiện từng bước và đánh dấu khi hoàn thành:
 
-**Bước 1 — Tạo user test**
+- [ ] **Tạo user test**
 
 ```bash
 sudo adduser noob_hacker
-# (Nhập mật khẩu, ví dụ: 123 — chỉ dùng cho lab, KHÔNG dùng mật khẩu yếu ngoài lab)
+# (Dùng mật khẩu đơn giản chỉ cho lab)
 ```
 
-**Bước 2 — Tạo tài liệu mật (ở user hiện tại, ví dụ `kali`)**
+- [ ] **Tạo tài liệu mật**
 
 ```bash
 echo "Đây là bí mật quốc gia Hutech" > ~/top_secret.txt
 ls -l ~/top_secret.txt
 ```
 
-**Bước 3 — Khóa quyền (Hardening)**
+- [ ] **Khóa quyền**
 
 ```bash
 chmod 600 ~/top_secret.txt
 ls -l ~/top_secret.txt   # mong đợi: -rw-------
 ```
 
-Giải thích: `600` nghĩa là owner có read+write, group/others không có quyền gì.
-
-**Bước 4 — Kiểm thử xâm nhập (đóng vai user `noob_hacker`)**
+- [ ] **Kiểm thử xâm nhập**
 
 ```bash
 su - noob_hacker
@@ -129,20 +124,18 @@ cat /home/kali/top_secret.txt   # sẽ báo Permission denied nếu setup đúng
 exit
 ```
 
-Nếu bạn muốn kiểm tra xem user `noob_hacker` có quyền sudo hay không: `sudo -l` (sẽ yêu cầu mật khẩu của `noob_hacker`).
-
-**Bước 5 — Dọn dẹp sau lab**
+- [ ] **Dọn dẹp**
 
 ```bash
-exit # trở về user chính nếu còn ở noob_hacker
+exit
 sudo deluser --remove-home noob_hacker
 rm ~/top_secret.txt
 ```
 
 ---
 
-> **Lưu ý bảo mật:** Lab dùng mật khẩu yếu chỉ để thực hành cục bộ. Trong môi trường thật, luôn dùng mật khẩu mạnh và hạn chế quyền sudo.
+> **Lưu ý bảo mật:** Lab sử dụng mật khẩu yếu chỉ để thực hành cục bộ. Trong môi trường thật, luôn dùng mật khẩu mạnh, MFA và giới hạn sudo.
 
 ---
 
-*Tôi đã giữ nguyên các bước lab gốc, bổ sung giải thích, ví dụ, và một số mẹo vận hành an toàn để bạn nắm chắc khái niệm.*
+_Phiên bản này được tối ưu để đọc nhanh, dễ thực hành và phù hợp cho curation trong GitBook._
