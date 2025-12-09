@@ -105,9 +105,20 @@ Nó sẽ hỏi bạn muốn cài giao diện nào.
 *(Đoạn này lâu nhất, mất khoảng 10-20 phút để tải và cài các công cụ).*
 
 ### Bước 6: Cài đặt GRUB Bootloader
-Cuối cùng, máy hỏi có cài GRUB không.
-1.  Install the GRUB boot loader to your primary drive? $\rightarrow$ Chọn **Yes**.
-2.  Device for boot loader installation $\rightarrow$ **KHÔNG** chọn "Enter device manually". Hãy chọn dòng thứ 2: **/dev/sda**.
+
+<details>
+<summary><strong>GRUB — nhanh (mở để xem)</strong></summary>
+
+GRUB (GRand Unified Bootloader) là chương trình nạp khởi động: được cài vào ổ đĩa hoặc phân vùng EFI để firmware (BIOS/UEFI) biết cách tải kernel và khởi động hệ điều hành.
+
+</details>
+
+Hướng dẫn nhanh (an toàn):
+
+1. Khi hỏi "Install the GRUB boot loader to your primary drive?" → chọn **Yes**.
+2.  Ở "Device for boot loader installation" → chọn ổ đĩa chính (ví dụ: `/dev/sda`). **KHÔNG** chọn "Enter device manually" và **KHÔNG** chọn một phân vùng như `/dev/sda1`.
+
+Lưu ý ngắn: Trên VM chọn `/dev/sda` an toàn; trên máy thật hãy cẩn trọng — sai ổ có thể làm mất boot của hệ khác.
 
 ### Bước 7: Hoàn tất
 Thông báo "Installation is complete". Bấm **Continue**. Máy ảo sẽ tự khởi động lại.
