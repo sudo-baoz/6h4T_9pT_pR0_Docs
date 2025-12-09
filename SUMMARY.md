@@ -1,5 +1,3 @@
----
-
 <p align="center">
 	<img src="https://img.shields.io/badge/CTF-Handbook-ff0066?style=for-the-badge&logo=github" alt="CTF Handbook" />
 	<br/>
