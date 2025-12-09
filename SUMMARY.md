@@ -48,3 +48,6 @@
 * [🧰 Cheatsheet: Các lệnh hay quên](extra/cheatsheet.md)
 * [🗺️ Roadmap: Lộ trình từ Zero đến Hero](extra/roadmap.md)
 * [🤝 Cộng đồng & Credits](extra/community.md)
+
+## 📜 LICENSE
+* [📄 License](LICENSE.md)

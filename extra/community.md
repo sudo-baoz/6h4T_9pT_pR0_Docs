@@ -13,7 +13,7 @@ Nơi đặt câu hỏi, tìm đồng đội CTF và chia sẻ kiến thức. Đ�
 | Kênh | Trạng thái | Link tham gia |
 | :--- | :--- | :--- |
 | **Discord Server** | 🟢 Active | [Link](https://discord.gg/uKBxZPHg5D) |
-| **GitHub Repo** | 🟡 Update Soon | [Link](#) |
+| **GitHub Repo** | 🟢 Active | [Link](https://github.com/sudo-baoz/6h4T_9pT_pR0_Docs) |
 | **Facebook Group** | 🟡 Update Soon | [Link](#) |
 
 > **💡 Văn hóa hỏi đáp:** Khi đặt câu hỏi trên cộng đồng, hãy nhớ nguyên tắc: *"Tôi đã thử làm X, mong đợi kết quả Y, nhưng lại gặp lỗi Z. Đây là log/ảnh màn hình của tôi."* Đừng chỉ hỏi *"Lỗi này sửa sao?"* mà không có thông tin gì.
