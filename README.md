@@ -106,7 +106,7 @@ Nếu bạn phát hiện lỗi sai, lỗi chính tả, hoặc có một kỹ thu
 - **Tên:** Mai Quốc Bảo
 - **Email:** `maibao123bao@gmail.com`
 - **GitHub:** https://github.com/sudo-baoz
-- **Bản quyền / License:** Nội dung mang tính giáo dục; xem phần `LICENSE` (nếu có).
+- **Bản quyền / License:** Nội dung mang tính giáo dục; xem phần `LICENSE`.
 - **Cập nhật lần cuối:** 9 tháng 12, 2025
 
 Nếu bạn muốn liên hệ trực tiếp về đóng góp, hợp tác viết nội dung hoặc báo lỗi nghiêm trọng, hãy gửi email với tiêu đề bắt đầu bằng `[CTF-HANDBOOK]`.
