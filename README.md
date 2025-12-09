@@ -4,8 +4,8 @@
 
 Chào mừng bạn đến với cuốn cẩm nang nhập môn **Kali Linux và Capture The Flag (CTF)**. Nếu bạn là sinh viên năm nhất, người mới bắt đầu (newbie) hoặc đơn giản là muốn tìm hiểu xem *"Hacker thực sự làm gì trên cái màn hình đen ngòm đó?"*, thì bạn đã đến đúng nơi.
 
-![Banner Kali Linux](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
-*(Bạn có thể thay link ảnh trên bằng ảnh banner tự thiết kế của team bạn)*
+![Banner Kali Linux](./assets/vm-setup.png)
+*(Bạn có thể thay ảnh banner bằng ảnh thiết kế của team hoặc đường dẫn URL nếu muốn)*
 
 ## 🎯 Tại sao tôi viết tài liệu này?
 
@@ -34,10 +34,8 @@ Tài liệu này được chia thành lộ trình từng bước:
 
 ## ⚠️ Tuyên bố miễn trừ trách nhiệm (Disclaimer)
 
-{% hint style="danger" %}
-**QUAN TRỌNG:**
-Tất cả kiến thức và công cụ được giới thiệu trong tài liệu này chỉ mang tính chất **giáo dục và nghiên cứu (Educational & Research Purpose Only)**.
-{% endhint %}
+> **⚠️ QUAN TRỌNG:**  
+> Tất cả kiến thức và công cụ được giới thiệu trong tài liệu này chỉ mang tính chất **giáo dục và nghiên cứu (Educational & Research Purpose Only)**.
 
 * Tuyệt đối **KHÔNG** sử dụng các kỹ thuật này để tấn công, phá hoại hoặc xâm nhập trái phép vào hệ thống của cá nhân, tổ chức, doanh nghiệp khi chưa có sự cho phép bằng văn bản.
 * Tác giả không chịu trách nhiệm cho bất kỳ hành vi vi phạm pháp luật nào của người đọc.
@@ -49,7 +47,18 @@ Tất cả kiến thức và công cụ được giới thiệu trong tài liệ
 
 Tài liệu này là một dự án mở và liên tục cập nhật. Nếu bạn thấy có lỗi sai hoặc muốn bổ sung kiến thức hay, đừng ngần ngại:
 
-* Tạo **Issue** hoặc **Pull Request** trên Repository GitHub của tôi.
+* Tạo **Issue** hoặc **Pull Request** trên repository GitHub của tôi.
 * Liên hệ qua Email: `email-cua-ban@student.hutech.edu.vn`
+
+### Contributing
+
+Nếu bạn muốn đóng góp nội dung hoặc sửa lỗi, làm theo các bước sau:
+
+1. Fork repository này.
+2. Tạo branch mới: `git checkout -b fix/some-issue`.
+3. Thực hiện thay đổi (viết rõ commit message).
+4. Push branch lên fork của bạn và tạo Pull Request.
+
+Lưu ý: giữ nội dung mang tính giáo dục, tránh chia sẻ exploit có thể gây hại. Xin tuân thủ luật pháp và đạo đức khi đóng góp.
 
 **Sẵn sàng chưa? Hãy click vào chương đầu tiên ở thanh menu bên trái để bắt đầu!** 🚀
