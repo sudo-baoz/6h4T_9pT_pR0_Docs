@@ -1,8 +1,8 @@
 # 🛡️ MISSION 3: ĐẠO ĐỨC HACKER & LUẬT CHƠI
 
 <p align="center">
-	<img src="https://img.shields.io/badge/Ethics-Professional-blue?style=for-the-badge" alt="ethics" />
-	<img src="https://img.shields.io/badge/Legal-Read%20First-red?style=for-the-badge" alt="legal" />
+	<img src="https://img.shields.io/badge/Ethics-Professional-blue?style=for-the-badge"/>
+	<img src="https://img.shields.io/badge/Legal-Read%20First-red?style=for-the-badge"/>
 </p>
 
 > *"With great power comes great responsibility."* — Sức mạnh càng lớn, trách nhiệm càng cao.
