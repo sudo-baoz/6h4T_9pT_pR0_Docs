@@ -4,6 +4,13 @@
 
 Trong chương này, chúng ta sẽ xây dựng **Phòng thí nghiệm (Lab)** bằng cách cài đặt "tươi" Kali Linux từ file ISO gốc. Việc này giống như bạn mua linh kiện về tự ráp PC thay vì mua máy bộ vậy – bạn sẽ kiểm soát được mọi thứ.
 
+<p align="center">
+    <img alt="badge-level" src="https://img.shields.io/badge/Level-Beginner-brightgreen?style=for-the-badge" />
+    <img alt="badge-topic" src="https://img.shields.io/badge/Topic-Lab%20Setup-blue?style=for-the-badge" />
+</p>
+
+<p align="center"><strong>💻⚡ GenZ Hacker Vibes — nhanh, trực quan, thực chiến</strong></p>
+
 ## 1. Chuẩn bị nguyên liệu
 
 Trước khi nấu ăn, chúng ta cần đi chợ. Bạn cần tải 2 thứ sau:
@@ -19,7 +26,22 @@ Trước khi nấu ăn, chúng ta cần đi chợ. Bạn cần tải 2 thứ sau
 2. Chọn mục **"Installer Images"**.
 3. Bấm nút Download ở bản **Recommended** (thường là 64-bit). File nặng khoảng 3GB-4GB.
 
-> **💡 Mẹo:** Nếu mạng yếu, hãy dùng link Torrent để tải nhanh và ổn định hơn.
+<details>
+<summary>💡 Mẹo tải nhanh (Torrent) — nhấn để xem</summary>
+
+Sử dụng torrent giúp tăng tốc tải về khi server chủ chậm hoặc bị giới hạn băng thông. Nếu bạn sử dụng torrent:
+
+- Dùng client: `qBittorrent` hoặc `Transmission`.
+- Luôn kiểm tra SHA256 checksum sau khi tải xong để đảm bảo file không bị giả mạo:
+
+```bash
+# Ví dụ kiểm tra SHA256 trên macOS / Linux
+sha256sum kali-linux-*.iso
+```
+
+**Cẩn trọng:** Chỉ dùng torrent từ trang chính thức của Kali hoặc nguồn uy tín. Không tải ISO từ nguồn lạ.
+
+</details>
 
 ---
 
