@@ -90,7 +90,7 @@ IP giúp bạn tìm đến đúng máy chủ, nhưng **Port** giúp bạn đi v�
 
 TCP đảm bảo độ tin cậy. Trước khi gửi dữ liệu, nó phải thiết lập kết nối.
 
-[Image of TCP 3-way handshake diagram]
+![Image of TCP 3-way handshake diagram](https://networkwalks.com/wp-content/uploads/2020/10/TCP-three-way-handshake-process-1-1.png)
 
 **Quy trình bắt tay 3 bước (3-Way Handshake):**
 
@@ -182,4 +182,3 @@ nc 127.0.0.1 8080
 -----
 
 **Nhiệm vụ hoàn thành\! Bạn đã nắm vững lý thuyết nền tảng.**
-**Tiếp theo:** Bạn có muốn tôi triển khai **Mission 10: Nmap Scanning** - sử dụng kiến thức về TCP/IP vừa học để thực hiện quét dò tìm lỗ hổng thực tế không? (Phần này sẽ rất thú vị và có nhiều lệnh ngầu).
