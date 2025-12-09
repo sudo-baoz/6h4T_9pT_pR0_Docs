@@ -17,7 +17,7 @@ Chọn chương bên dưới để bắt đầu hành trình: từ thiết lập
 ---
 
 ## 🐧 LEVEL 1: LINUX SURVIVAL (Sinh tồn)
-* [💻 Mission 4: Làm chủ dòng lệnh (Linux Basics)](chapter-0-intro/linux-basic.md)
+* [💻 Mission 4: Làm chủ dòng lệnh (Linux Basics)](chapter-1-intro/linux-basic.md)
 * [⚡ Mission 5: Quyền lực tối thượng (Sudo & Permissions)](chapter-1-linux/permissions.md)
 * [📝 Mission 6: Cuộc chiến soạn thảo (Nano vs Vim)](chapter-1-linux/text-editors.md)
 * [🤖 Mission 7: Tự động hóa với Bash Script (Cơ bản)](chapter-1-linux/bash-scripting.md)
