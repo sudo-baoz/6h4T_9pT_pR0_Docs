@@ -5,8 +5,8 @@
 Trong chương này, chúng ta sẽ xây dựng **Phòng thí nghiệm (Lab)** bằng cách cài đặt "tươi" Kali Linux từ file ISO gốc. Việc này giống như bạn mua linh kiện về tự ráp PC thay vì mua máy bộ vậy – bạn sẽ kiểm soát được mọi thứ.
 
 <p align="center">
-    <img alt="badge-level" src="https://img.shields.io/badge/Level-Beginner-brightgreen?style=for-the-badge" />
-    <img alt="badge-topic" src="https://img.shields.io/badge/Topic-Lab%20Setup-blue?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Level-Beginner-brightgreen?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Topic-Lab%20Setup-blue?style=for-the-badge" />
 </p>
 
 <p align="center"><strong>💻⚡ GenZ Hacker Vibes — nhanh, trực quan, thực chiến</strong></p>
