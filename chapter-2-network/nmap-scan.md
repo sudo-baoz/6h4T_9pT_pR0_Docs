@@ -36,9 +36,9 @@ Trước khi quét cổng, Nmap hỏi: "Máy này có sống không?".
 
 Nmap không chỉ báo Mở/Đóng. Nó báo 3 trạng thái quan trọng:
 
-1.  **🟢 OPEN:** Có ứng dụng đang lắng nghe. $\rightarrow$ **MỤC TIÊU TẤN CÔNG.**
-2.  **🔴 CLOSED:** Gói tin đến nơi nhưng không có ứng dụng nào nhận, server gửi trả gói `RST` (Reset). $\rightarrow$ Máy đang bật, nhưng cổng này rảnh.
-3.  **FILTERED:** Gói tin bị nuốt chửng. Không có hồi âm. $\rightarrow$ **Có Firewall/IPS đang chặn.**
+1.  **🟢 OPEN:** Có ứng dụng đang lắng nghe. → **MỤC TIÊU TẤN CÔNG.**
+2.  **🔴 CLOSED:** Gói tin đến nơi nhưng không có ứng dụng nào nhận, server gửi trả gói `RST` (Reset). → Máy đang bật, nhưng cổng này rảnh.
+3.  **FILTERED:** Gói tin bị nuốt chửng. Không có hồi âm. → **Có Firewall/IPS đang chặn.**
 
 -----
 
@@ -58,14 +58,14 @@ Nmap không chỉ báo Mở/Đóng. Nó báo 3 trạng thái quan trọng:
 
 Dùng khi bạn không có quyền `sudo` (non-root user).
 
-  * **Quy trình:** Hoàn thành đủ 3 bước bắt tay (SYN $\rightarrow$ SYN/ACK $\rightarrow$ ACK). Kết nối được thiết lập xong rồi mới ngắt.
+  * **Quy trình:** Hoàn thành đủ 3 bước bắt tay (SYN → SYN/ACK → ACK). Kết nối được thiết lập xong rồi mới ngắt.
   * **Nhược điểm:** Rất ồn ào. Log của server sẽ ghi lại IP của bạn ngay lập tức.
 
 ### C. UDP Scan (`-sU`) - "Kẻ Kiên Nhẫn"
 
 Dùng để tìm DNS (53), DHCP (67), NTP (123).
 
-  * **Đặc điểm:** Gửi gói tin đi và chờ. Nếu server im lặng $\rightarrow$ Có thể mở hoặc bị lọc. Nmap phải chờ timeout nên quét kiểu này **CỰC KỲ LÂU**.
+  * **Đặc điểm:** Gửi gói tin đi và chờ. Nếu server im lặng → Có thể mở hoặc bị lọc. Nmap phải chờ timeout nên quét kiểu này **CỰC KỲ LÂU**.
 
 -----
 
@@ -78,7 +78,7 @@ Biết cổng mở là chưa đủ. Bạn phải biết **đích danh** kẻ đa
 Nmap sẽ kết nối vào cổng và "nói chuyện" với dịch vụ để lấy Banner.
 
   * *Ví dụ:* Thay vì báo "Port 80 Open", nó báo "Apache httpd 2.4.49".
-  * **Giá trị:** Bạn lên Google tìm "Apache 2.4.49 vulnerability" $\rightarrow$ Thấy lỗi **Path Traversal** $\rightarrow$ Khai thác\!
+  * **Giá trị:** Bạn lên Google tìm "Apache 2.4.49 vulnerability" → Thấy lỗi **Path Traversal** → Khai thác!
 
 ### 2\. OS Detection (`-O`)
 
@@ -181,7 +181,7 @@ OS details: Linux 3.2 - 4.9
 > **🕵️ Nhận định:**
 >
 > 1.  **Mục tiêu:** Chạy Linux Kernel 3.x hoặc 4.x.
-> 2.  **Web (Port 80):** Chạy Apache 2.4.7 (Phiên bản này ra mắt năm 2013 $\rightarrow$ Rất cũ $\rightarrow$ **Tiềm năng khai thác cao**).
+> 2.  **Web (Port 80):** Chạy Apache 2.4.7 (Phiên bản này ra mắt năm 2013 → Rất cũ → **Tiềm năng khai thác cao**).
 > 3.  **SSH (Port 22):** Đang mở, có thể thử Brute-force nếu password yếu.
 
 -----
