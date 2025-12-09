@@ -1,8 +1,8 @@
 # 🕵️‍♂️ MISSION 1: KALI LINUX — VŨ KHÍ TỐI THƯỢNG CHO CTF
 
 <p align="center">
-	<img src="https://img.shields.io/badge/CTF-Kali-blue?style=for-the-badge&logo=Kali-Linux" alt="Kali badge" />
-	<img src="https://img.shields.io/badge/Tools-600%2B-orange?style=for-the-badge" alt="tools badge" />
+	<img src="https://img.shields.io/badge/CTF-Kali-blue?style=for-the-badge&logo=Kali-Linux"/>
+	<img src="https://img.shields.io/badge/Tools-600%2B-orange?style=for-the-badge"/>
 </p>
 
 > *"The quieter you become, the more you are able to hear."* — Kali mindset
