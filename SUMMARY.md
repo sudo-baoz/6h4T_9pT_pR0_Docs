@@ -10,14 +10,14 @@ Chọn chương bên dưới để bắt đầu hành trình: từ thiết lập
 
 ## 🟢 LEVEL 0: SETUP & MINDSET
 * [👋 Start Game: Lời nói đầu](README.md)
-* [🚩 Mission 1: Tại sao lại là Kali Linux?](chapter-1-intro/why-kali.md)
-* [🛠️ Mission 2: Xây dựng Lab "Bất tử" (VMware Setup)](chapter-1-intro/setup-vm.md)
-* [🧠 Mission 3: Đạo đức Hacker & Luật chơi](chapter-1-intro/ethics.md)
+* [🚩 Mission 1: Tại sao lại là Kali Linux?](chapter-0-intro/why-kali.md)
+* [🛠️ Mission 2: Xây dựng Lab "Bất tử" (VMware Setup)](chapter-0-intro/setup-vm.md)
+* [🧠 Mission 3: Đạo đức Hacker & Luật chơi](chapter-0-intro/ethics.md)
 
 ---
 
 ## 🐧 LEVEL 1: LINUX SURVIVAL (Sinh tồn)
-* [💻 Mission 4: Làm chủ dòng lệnh (Linux Basics)](chapter-1-intro/linux-basic.md)
+* [💻 Mission 4: Làm chủ dòng lệnh (Linux Basics)](chapter-0-intro/linux-basic.md)
 * [⚡ Mission 5: Quyền lực tối thượng (Sudo & Permissions)](chapter-1-linux/permissions.md)
 * [📝 Mission 6: Cuộc chiến soạn thảo (Nano vs Vim)](chapter-1-linux/text-editors.md)
 * [🤖 Mission 7: Tự động hóa với Bash Script (Cơ bản)](chapter-1-linux/bash-scripting.md)
