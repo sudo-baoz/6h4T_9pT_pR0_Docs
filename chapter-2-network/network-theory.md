@@ -61,10 +61,10 @@ Bạn thường thấy ký hiệu `/24` (Ví dụ: `192.168.1.0/24`). Đây là 
 IP giúp bạn tìm đến đúng máy chủ, nhưng **Port** giúp bạn đi vào đúng dịch vụ.
 
   * Tổng số Port: 0 - 65535.
-  * Trạng thái Port (Nmap sẽ báo cho bạn):
-      * **Open:** Cổng đang mở, có chương trình đang chạy $\rightarrow$ **Mục tiêu tấn công.**
-      * **Closed:** Cổng đóng, có phản hồi từ chối $\rightarrow$ Không có gì ở đây.
-      * **Filtered:** Bị Firewall chặn, không có phản hồi $\rightarrow$ Khó nhằn.
+    * Trạng thái Port (Nmap sẽ báo cho bạn):
+      * **Open:** Cổng đang mở, có chương trình đang chạy → **Mục tiêu tấn công.**
+      * **Closed:** Cổng đóng, có phản hồi từ chối → Không có gì ở đây.
+      * **Filtered:** Bị Firewall chặn, không có phản hồi → Khó nhằn.
 
 ### Các Port "Tử huyệt" thường gặp:
 
@@ -96,11 +96,12 @@ TCP đảm bảo độ tin cậy. Trước khi gửi dữ liệu, nó phải thi
 
 1.  **SYN (Synchronize):** Khách (Client) gửi cờ SYN ("Alo, mở cửa không?").
 2.  **SYN-ACK (Synchronize-Acknowledge):** Chủ (Server) trả lời SYN-ACK ("Mở nha, vào đi").
-3.  **ACK (Acknowledge):** Khách gửi ACK ("Ok, tôi vào đây"). $\rightarrow$ Kết nối thiết lập.
+3.  **ACK (Acknowledge):** Khách gửi ACK ("Ok, tôi vào đây"). → Kết nối thiết lập.
 
 > **💀 Hacker Mindset:**
 >
->   * **SYN Scan (Nmap -sS):** Hacker gửi SYN. Server trả lời SYN-ACK. Hacker... im lặng (hoặc gửi RST) và bỏ chạy. $\rightarrow$ Biết cổng mở mà không tạo kết nối chính thức $\rightarrow$ Khó bị phát hiện (Stealth Scan).
+>   * **SYN Scan (Nmap -sS):** Hacker gửi SYN. Server trả lời SYN-ACK. Hacker... im lặng (hoặc gửi RST) và bỏ chạy. → Biết cổng mở mà không tạo kết nối chính thức → Khó bị phát hiện (Stealth Scan).
+>
 
 ![WebSocket](https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRhkmqrsiZvQGm7bGVGceQVACefBRvN7NgPCVrkQHxgsnus6EBv-RV0K2x_GLoE24rtxNp5mhMzRc4xk6s-bEk0E0g7zyEKy9V5xtVaq4FXRQXweF0)
 

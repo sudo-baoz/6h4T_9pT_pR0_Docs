@@ -50,7 +50,7 @@ sha256sum kali-linux-*.iso
 Chúng ta cần tạo một cái "vỏ" máy tính ảo trước khi nạp hệ điều hành vào.
 
 1.  Mở VMware, chọn **"Create a New Virtual Machine"**.
-2.  Chọn **"Installer disc image file (iso)"** $\rightarrow$ Bấm **Browse** và chọn file Kali `.iso` bạn vừa tải về.
+2.  Chọn **"Installer disc image file (iso)"** → Bấm **Browse** và chọn file Kali `.iso` bạn vừa tải về.
 3.  **Quan trọng:** Ở bước chọn hệ điều hành:
     * **Guest operating system:** Linux
     * **Version:** Debian 10.x 64-bit (hoặc Debian 11/12 64-bit). *Vì Kali dựa trên nền tảng Debian.*
@@ -93,7 +93,7 @@ Máy sẽ tự chạy cấu hình mạng một lúc. Sau đó:
 2.  Chọn ổ đĩa ảo VMware vừa tạo (thường là `SCSI3 (0,0,0)`).
 3.  Chọn **All files in one partition** (Tất cả trong 1 phân vùng - Khuyên dùng cho người mới).
 4.  Chọn **Finish partitioning and write changes to disk**.
-5.  Hiện ra thông báo hỏi "Are you sure?" $\rightarrow$ Chọn **Yes** $\rightarrow$ Continue.
+5.  Hiện ra thông báo hỏi "Are you sure?" → Chọn **Yes** → Continue.
 
 *(Lúc này đi pha cốc cà phê, quá trình cài đặt hệ thống nền sẽ mất khoảng 5-10 phút)*.
 
