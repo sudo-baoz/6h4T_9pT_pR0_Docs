@@ -67,10 +67,8 @@ Trong thế giới An toàn thông tin (ATTT) và đặc biệt là các cuộc 
 ### 🐛 Reverse Engineering & Pwning
 
 <details>
-<summary>Ghi chú</summary>
-
 _Ghi chú:_ Bạn không cần học 600 tool; tập trung vào 15–25 công cụ chính sẽ giúp bạn giải được phần lớn challenge.
-
+ 
 </details>
 
 _Ghi chú:_ Bạn không cần học 600 tool; tập trung vào 15–25 công cụ chính sẽ giúp bạn giải được phần lớn challenge.
