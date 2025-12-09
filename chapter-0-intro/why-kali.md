@@ -22,7 +22,7 @@ Trong thế giới An toàn thông tin (ATTT) và đặc biệt là các cuộc 
 ## ⚖️ So sánh nhanh: Kali vs Ubuntu vs Parrot
 
 | Tiêu chí | Kali Linux | Ubuntu / Mint | Parrot OS |
-|---|---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|
 | Mục tiêu | Offensive Security / CTF | Desktop / Dev | Privacy + Pentest |
 | Quyền mặc định | root-first (cần cẩn trọng) | user-first (an toàn hơn) | user-friendly hơn Kali |
 | Tools | ~600+ preinstalled | Cần cài thêm | Nhiều công cụ + privacy tools |
@@ -65,11 +65,6 @@ Trong thế giới An toàn thông tin (ATTT) và đặc biệt là các cuộc 
 ---
 
 ### 🐛 Reverse Engineering & Pwning
-
-<details>
-_Ghi chú:_ Bạn không cần học 600 tool; tập trung vào 15–25 công cụ chính sẽ giúp bạn giải được phần lớn challenge.
- 
-</details>
 
 _Ghi chú:_ Bạn không cần học 600 tool; tập trung vào 15–25 công cụ chính sẽ giúp bạn giải được phần lớn challenge.
 ---
