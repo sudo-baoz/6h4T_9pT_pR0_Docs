@@ -5,8 +5,10 @@
 
 Chào mừng bạn đến với cuốn cẩm nang nhập môn **Kali Linux và Capture The Flag (CTF)**. Nếu bạn là sinh viên năm nhất đang loay hoay với những dòng lệnh Linux đầu tiên, một "newbie" muốn bước chân vào thế giới An toàn thông tin (ATTT), hay đơn giản là một người tò mò muốn biết *"Hacker mũ trắng thực sự làm gì trên màn hình đen ngòm đó?"* — thì chúc mừng, bạn đã tìm đúng nơi.
 
-![Banner Kali Linux](https://cellphones.com.vn/sforum/wp-content/uploads/2021/09/00-Kali-Linux.png)
-*(Đây là nơi ghi lại hành trình từ Zero đến khi giải được flag đầu tiên của chúng ta)*
+<p align="center">
+    <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2021/09/00-Kali-Linux.png" alt="Banner Kali Linux" style="max-width:900px; width:100%; height:auto; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.15);" />
+</p>
+<p align="center"><em>Đây là nơi ghi lại hành trình từ Zero đến khi giải được flag đầu tiên của chúng ta</em></p>
 
 ---
 
@@ -96,3 +98,15 @@ Nếu bạn phát hiện lỗi sai, lỗi chính tả, hoặc có một kỹ thu
 **Bạn đã sẵn sàng chưa? Hãy bật máy ảo lên, hít một hơi thật sâu và click vào chương đầu tiên ở menu bên trái!** 🚀
 
 *Let the hacking begin!*
+
+---
+
+## Thông tin tác giả
+
+- **Tên:** Mai Quốc Bảo
+- **Email:** `maibao123bao@gmail.com`
+- **GitHub:** https://github.com/sudo-baoz
+- **Bản quyền / License:** Nội dung mang tính giáo dục; xem phần `LICENSE` (nếu có).
+- **Cập nhật lần cuối:** 9 tháng 12, 2025
+
+Nếu bạn muốn liên hệ trực tiếp về đóng góp, hợp tác viết nội dung hoặc báo lỗi nghiêm trọng, hãy gửi email với tiêu đề bắt đầu bằng `[CTF-HANDBOOK]`.
