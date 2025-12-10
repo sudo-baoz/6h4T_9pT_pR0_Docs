@@ -101,6 +101,18 @@ Nếu bạn phát hiện lỗi sai, lỗi chính tả, hoặc có một kỹ thu
 
 ---
 
+
+### Ủng hộ tác giả
+Nếu bạn thấy tài liệu này hữu ích và muốn ủng hộ tác giả, hãy mua một ly cà phê tại đây:
+
+[☕ Mua cà phê cho tôi](https://www.buymeacoffee.com/baoz)
+
+<p align="center">
+    <img src="assets/qr.png" alt="QR Donate Vietcombank" style="max-width:300px; width:100%; height:auto; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.15);" />
+</p>
+
+---
+
 ## Thông tin tác giả
 
 - **Tên:** Mai Quốc Bảo
