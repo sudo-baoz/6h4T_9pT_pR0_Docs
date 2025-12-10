@@ -108,7 +108,8 @@ Nếu bạn thấy tài liệu này hữu ích và muốn ủng hộ tác giả,
 [☕ Mua cà phê cho tôi](https://www.buymeacoffee.com/baoz)
 
 <p align="center">
-    <img src="assets/qr.png" alt="QR Donate Vietcombank" style="max-width:300px; width:100%; height:auto; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.15);" />
+    <img src="assets/qr-vcb.png" alt="QR Donate Vietcombank" style="max-width:300px; width:45%; height:auto; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.15); display:inline-block;" />
+    <img src="assets/qr-momo.jpg" alt="QR Donate MoMo" style="max-width:300px; width:45%; height:auto; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.15); display:inline-block;" />
 </p>
 
 ---
